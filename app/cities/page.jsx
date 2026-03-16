@@ -1,7 +1,6 @@
 'use client';
 
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
+
 import Link from 'next/link';
 
 export default function CitiesPage() {
@@ -49,7 +48,7 @@ export default function CitiesPage() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <Header openModal={handleOpenModal} />
+   <Header />
       
       <main className="py-16 px-4">
         <div className="max-w-7xl mx-auto">
@@ -124,8 +123,7 @@ export default function CitiesPage() {
           </div>
         </div>
       </main>
-
-      <Footer currentPage="cities" openModal={handleOpenModal} />
+<Footer />
     </div>
   );
 }
